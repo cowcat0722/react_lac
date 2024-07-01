@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './componets/Heater';
+import Body from './componets/Body';
+import Body2 from './componets/Body2';
+import Post from './componets/Post';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Body />
+      <Body2 username={"ssar"} password={"1234"} />
+      <Post />
     </div>
-  );
+  )
 }
 
 export default App;
